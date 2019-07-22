@@ -1,0 +1,77 @@
+//  ~*~ SLIDER ~*~
+.carousel {
+    padding-top:40px;
+    h2 {
+        font-weight: 300;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+//~~ arrows ~~
+.prev, .next {
+    width: 48px;
+    height: 48px;
+    background-color: #be0364;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 0;
+    top: 53%;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 100;
+    color: #fff;
+    transition: 0.3s;
+        &:hover {
+            background-color: darken(#be0364, 20%); 
+        }
+    }
+
+.prev {
+    left: 345px;
+}
+        
+.next {
+    right: 345px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .prev, .next {
+        visibility: hidden;
+    }
+}
+
+//~~ slider boxes ~~
+.slider-desc {
+  line-height:50px;
+  font-size:14px;
+  margin-bottom: 14px;
+  transition: 0.3s;
+}
+
+.box {
+  color:#fff;
+}
+
+.clip, .slider_item {
+  overflow: hidden;
+}
+
+.slider .slick-center .box {
+  color:#000;
+  opacity:1;
+}
+
+.center .box, .slider_item{
+  opacity:0.7;
+  transition:all 300ms ease;
+  bottom: 0;
+}

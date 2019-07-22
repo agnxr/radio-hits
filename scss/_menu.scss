@@ -1,0 +1,62 @@
+// ~*~ MENU ~*~
+.navigation {
+    background-color: #7c0242;
+    .navbar {
+        padding:0;
+    }
+    .nav-link {
+        color: #fff;
+        font-size: 18px;
+    }
+    .nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-item>a:hover {
+        background-color: #fff;
+        color: #1e1d1b;
+    }
+}
+
+// if IE:
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @media only screen and (max-width: 991px) {
+        .nav-link {
+            width: 280px;
+        }
+    }
+}
+
+
+//delete dots in Edge
+.navbar > ul > li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-item>a:hover {
+        background-color: #7c0242!important;
+        color: #fff !important;
+        text-decoration: underline;
+    }
+}
+
+.nav-btn {
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 160px;
+    height: 40px;
+    border-radius: 0;
+
+    &::after {
+        content: 'menu';
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+        padding-right: 30px;
+    }
+
+    &:hover {
+        background-color: #7c0242;
+        transition:all 300ms ease;
+    }
+}

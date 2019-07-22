@@ -1,0 +1,179 @@
+//~*~ RECORD CHART ~*~
+
+.gap {
+    background-color: #f7f7f7;
+    height: 50px;
+}
+.record-chart {
+    background-color: #f7f7f7;
+    padding-top: 0;
+    h3 {
+        margin-top:0px;
+    }
+    .pointing-triangle {
+        color: #fff;
+        font-size: 35px;
+        height: 74px;
+        width: 74px;
+        background-color:#e8e8e8;
+    }
+}
+
+.charts-title {
+    height: 74px;
+    background-color: #fff;  
+    width: 80%;
+    margin-bottom: 20px;
+    p {
+        margin-bottom: 0;
+        line-height: 24px;
+        font-size: 24px;
+    }
+    span {
+        line-height: 22px;
+        font-size:14px;
+        color: #7d7d7d;
+    }
+}
+
+.performer {
+    font-size: 14px;
+    min-width: 600px;
+}
+
+.hit-item {
+    border-bottom: 1px solid #690238;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .number {
+    background-color: #7c0242;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    margin-right:8px;
+    }
+    .points {
+        margin-right: 45px;
+    }
+    .arrow {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .author {
+        font-size: 20px;
+        line-height: 26px;
+        color: #1e1d1b;
+        margin:0;
+        font-weight: bold;
+    }
+    .song-title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 17px;
+        margin: 0;
+    }
+}
+
+.controls {
+    height: 40px;
+    width: 80px;
+    border: none;
+}
+
+.audioControl {
+    border: 0;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        color: #7c0242;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    .author {
+        font-size: 13px;
+    }
+
+    .song-title {
+        font-size: 13px;
+    }
+
+    .charts-title p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .points {
+        margin-right: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .controls {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 15px !important;
+    }
+}
+
+
+// ~*~ popup + ~*~
+
+// ~~plus button~~ 
+[data-toggle="popover"] {
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    &:hover {
+        color: #7c0242;
+    }
+}
+
+//~~ popup msg ~~
+   .popover-header {
+    background-color: #690238;
+    color: #fff;
+    font-family: 'Lato';
+   }
+   .popover-body {
+    background-color: #e8e8e8;
+    font-family: 'Lato';
+   }
+   .popover .arrow  {
+       display: none;
+    }
+   
+// ~*~ modal (after 10 clicks) ~*~
+.modal-header {
+    background-color: #690238;
+    color: #fff;
+}
+// x
+.close {
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}
+
+// OK
+.close-modal {
+    background-color: #be0364;
+    border-color: #be0364;
+    &:hover {
+        background-color: #4a0127 !important;
+        border-color: #4a0127;
+    }
+}

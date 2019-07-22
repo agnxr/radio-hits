@@ -1,0 +1,67 @@
+// ~*~ COUNTER ~*~
+.counter {
+    background-color: #fff;
+    padding-bottom: 35px;
+    p {
+        padding-top:15px;
+        font-weight: bold;
+        font-size: 26px;
+    }
+}
+
+div[class^="date"] {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    max-height: 72px;
+    width: 67px;
+    background-color: #be0364;
+    line-height: 0;
+    padding-top:10px;
+    padding-bottom:10px;
+    &:first-child {
+        background-color: #be0364; 
+    }
+    &:nth-child(2){
+        background-color: #aa035a;
+    }
+    &:nth-child(3){
+        background-color: #850347;
+    }
+    &:nth-child(4){
+        background-color: #690238;
+    }
+}
+p[class^="date"]{
+    margin-bottom:8px;
+}
+
+p[class^="period"] {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 0;
+}
+
+// ~*~VOTING INFO ~*~
+.voting-info {
+    background-color: #be0364;
+    color: #fff;
+    padding: 40px;
+    .vote-btn {
+        font-weight: 800;
+        color: #be0364;
+        cursor: pointer;
+        border: none;
+        height: 35px;
+        width: 104px;
+    }
+    p {
+        width: 100%;
+    }
+}
+
+.under-gap {
+    height: 18px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}

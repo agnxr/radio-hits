@@ -1,0 +1,26 @@
+// ~*~ INTERVIEWS ~*~
+.interviews {
+    overflow: hidden;
+    h3 {
+        margin-top: 20px;
+    }
+}
+.interview-intro {
+    background-color: #fff;
+    padding: 18px;
+    width: 100%;
+    a {
+        color: #323232;
+        font-size: 18px;
+    }
+    img {
+        width: 380px;
+        height: 229px;  
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .interview-intro {
+        max-width: 380px;
+    }
+}

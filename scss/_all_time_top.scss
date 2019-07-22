@@ -1,0 +1,61 @@
+// ~*~ ALL TIME TOP ~*~
+.all-time-top {
+    table {
+        margin-left: 0px;
+        border: none;
+    }
+    thead {
+        background-color: #690238;
+        color: #fff;
+        font-weight: normal;
+        p {
+            font-weight: normal;
+            margin-bottom: 0px;
+        }
+    }
+    th {
+        &:first-child, &:last-child {
+            padding: 8px 10px 8px 10px;
+        }
+    }
+    td {
+        width: 100%;
+    }
+}
+
+.top-list {
+    span {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    th {
+        border: none;
+        background-color: #690238;
+    }
+    tr {
+        &:nth-child(odd){
+            background-color: #aa035a;
+        }
+        &:nth-child(even){
+            background-color: #960350; 
+        }
+    }
+    td {
+        width: 100%;
+        border: none;
+    }
+}
+
+.top-song p, .top-song .audioControl {
+   font-size: 14px;
+   color: #fff;  
+}
+
+.top-song-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff;
+}
